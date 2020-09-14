@@ -1,20 +1,8 @@
 test_average (__main__.TestExercice) ... ok
 test_to_celsius (__main__.TestExercice) ... FAIL
-test_to_degrees (__main__.TestExercice) ... ERROR
+test_to_degrees (__main__.TestExercice) ... FAIL
 test_to_farenheit (__main__.TestExercice) ... FAIL
 test_to_radians (__main__.TestExercice) ... ok
-
-======================================================================
-ERROR: test_to_degrees (__main__.TestExercice)
-----------------------------------------------------------------------
-Traceback (most recent call last):
-  File "test_exercice.py", line 56, in test_to_degrees
-    output = [exercice.to_degrees(v) for v in values]
-  File "test_exercice.py", line 56, in <listcomp>
-    output = [exercice.to_degrees(v) for v in values]
-  File "/home/runner/work/c01_ch3_exercices-DaddyChucky/c01_ch3_exercices-DaddyChucky/exercice.py", line 18, in to_degrees
-    angle_secs *= 3600
-UnboundLocalError: local variable 'angle_secs' referenced before assignment
 
 ======================================================================
 FAIL: test_to_celsius (__main__.TestExercice)
@@ -30,6 +18,27 @@ First differing element 0:
 
 - [0.0, 0.0, 0.0]
 + [-17.77777777777778, -31.666666666666664, 232.77777777777777] : Mauvais calcul de farenheit -> celsius
+
+======================================================================
+FAIL: test_to_degrees (__main__.TestExercice)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "test_exercice.py", line 62, in test_to_degrees
+    'Mauvais calcul de radians -> degres'
+AssertionError: Lists differ: [(114.59, 35.49, 127764.0), (-229.18, 49.01[60 chars]8.0)] != [(79.0980174562859, 5.881047377154118, 29.6[197 chars]998)]
+
+First differing element 0:
+(114.59, 35.49, 127764.0)
+(79.0980174562859, 5.881047377154118, 29.612494192724625)
+
+- [(114.59, 35.49, 127764.0),
+-  (-229.18, 49.01, 176436.0),
+-  (286.48, 28.73, 103428.0),
+-  (234.34, 20.38, 73368.0)]
++ [(79.0980174562859, 5.881047377154118, 29.612494192724625),
++  (-278.1960349125718, 48.23790524569176, 0.7750116145507491),
++  (257.74504364071475, -15.297381557114704, 44.031235481811564),
++  (213.95544569810457, -2.673258113725865, 23.057550624127998)] : Mauvais calcul de radians -> degres
 
 ======================================================================
 FAIL: test_to_farenheit (__main__.TestExercice)
@@ -49,4 +58,4 @@ First differing element 0:
 ----------------------------------------------------------------------
 Ran 5 tests in 0.001s
 
-FAILED (failures=2, errors=1)
+FAILED (failures=3)
