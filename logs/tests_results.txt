@@ -10,14 +10,18 @@ FAIL: test_to_celsius (__main__.TestExercice)
 Traceback (most recent call last):
   File "test_exercice.py", line 74, in test_to_celsius
     'Mauvais calcul de farenheit -> celsius'
-AssertionError: Lists differ: [-32.0, -45.888888888888886, 218.55555555555554] != [-17.77777777777778, -31.666666666666664, 232.77777777777777]
+AssertionError: Lists differ: [-17.77777777777778, -31.666666666666668, 232.77777777777777] != [-17.77777777777778, -31.666666666666664, 232.77777777777777]
 
-First differing element 0:
--32.0
--17.77777777777778
+First differing element 1:
+-31.666666666666668
+-31.666666666666664
 
-- [-32.0, -45.888888888888886, 218.55555555555554]
-+ [-17.77777777777778, -31.666666666666664, 232.77777777777777] : Mauvais calcul de farenheit -> celsius
+- [-17.77777777777778, -31.666666666666668, 232.77777777777777]
+?                                        ^
+
++ [-17.77777777777778, -31.666666666666664, 232.77777777777777]
+?                                        ^
+ : Mauvais calcul de farenheit -> celsius
 
 ======================================================================
 FAIL: test_to_degrees (__main__.TestExercice)
@@ -46,18 +50,16 @@ FAIL: test_to_farenheit (__main__.TestExercice)
 Traceback (most recent call last):
   File "test_exercice.py", line 86, in test_to_farenheit
     'Mauvais calcul de celsius -> farenheit'
-AssertionError: Lists differ: [32.0, -13.0, 843.8] != [32.0, -13.0, 843.8000000000001]
+AssertionError: Lists differ: [-32.0, -77.0, 779.8] != [32.0, -13.0, 843.8000000000001]
 
-First differing element 2:
-843.8
-843.8000000000001
+First differing element 0:
+-32.0
+32.0
 
-- [32.0, -13.0, 843.8]
-+ [32.0, -13.0, 843.8000000000001]
-?                    ++++++++++++
- : Mauvais calcul de celsius -> farenheit
+- [-32.0, -77.0, 779.8]
++ [32.0, -13.0, 843.8000000000001] : Mauvais calcul de celsius -> farenheit
 
 ----------------------------------------------------------------------
-Ran 5 tests in 0.001s
+Ran 5 tests in 0.002s
 
 FAILED (failures=3)
