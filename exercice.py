@@ -14,6 +14,7 @@ def to_degrees(angle_rads: float) -> tuple:
     degre = angle_rads/math.pi  *180
 
     tronc = degre - math.floor(degre)
+    print(tronc)
     angle_mins = tronc * 60
 
     tronc = angle_mins-math.floor(angle_mins)
