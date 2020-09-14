@@ -62,6 +62,6 @@ First differing element 2:
  : Mauvais calcul de celsius -> farenheit
 
 ----------------------------------------------------------------------
-Ran 5 tests in 0.002s
+Ran 5 tests in 0.001s
 
 FAILED (failures=3)
