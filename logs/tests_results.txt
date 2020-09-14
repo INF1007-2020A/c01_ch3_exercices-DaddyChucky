@@ -13,7 +13,7 @@ Traceback (most recent call last):
   File "test_exercice.py", line 37, in <listcomp>
     output = [exercice.to_radians(*v) for v in values]
   File "/home/runner/work/c01_ch3_exercices-DaddyChucky/c01_ch3_exercices-DaddyChucky/exercice.py", line 13, in to_radians
-    return 2*math.pi()/360*angle_degs*angl
+    return 2*math.pi()/360*angle_degs*angle_mins/60*angle_secs/3600
 TypeError: 'float' object is not callable
 
 ======================================================================
