@@ -2,7 +2,7 @@ test_average (__main__.TestExercice) ... ok
 test_to_celsius (__main__.TestExercice) ... FAIL
 test_to_degrees (__main__.TestExercice) ... FAIL
 test_to_farenheit (__main__.TestExercice) ... FAIL
-test_to_radians (__main__.TestExercice) ... FAIL
+test_to_radians (__main__.TestExercice) ... ok
 
 ======================================================================
 FAIL: test_to_celsius (__main__.TestExercice)
@@ -52,25 +52,7 @@ First differing element 0:
 - [0.0, 0.0, 0.0]
 + [32.0, -13.0, 843.8000000000001] : Mauvais calcul de celsius -> farenheit
 
-======================================================================
-FAIL: test_to_radians (__main__.TestExercice)
 ----------------------------------------------------------------------
-Traceback (most recent call last):
-  File "test_exercice.py", line 43, in test_to_radians
-    'Mauvais calcul de degres -> radians'
-AssertionError: Lists differ: [-0.08726646259971647, 0.17453292519943295, 6.2[29 chars]7318] != [-0.08668468618238503, 0.17598251810595048, 6.2[27 chars]2748]
+Ran 5 tests in 0.002s
 
-First differing element 0:
--0.08726646259971647
--0.08668468618238503
-
-+ [-0.08668468618238503, 0.17598251810595048, 6.283490739798685, 6.9973449482748]
-- [-0.08726646259971647,
--  0.17453292519943295,
--  6.283185307179586,
--  6.981317007977318] : Mauvais calcul de degres -> radians
-
-----------------------------------------------------------------------
-Ran 5 tests in 0.001s
-
-FAILED (failures=4)
+FAILED (failures=3)
